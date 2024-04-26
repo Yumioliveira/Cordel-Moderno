@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+:root {
+    --font1: verdana, Geneva, Tohoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: "Sriracha", cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,6 +13,7 @@
 
 
 html, body {
+    font-family: var(--font1);
     min-width: 100vh;
     background-color: darkgray;
 }
@@ -18,8 +25,11 @@ header {
 }
 
 header > h1 {
+
+    font-family: var(--font2);
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
  
 
@@ -33,11 +43,13 @@ header a, footer a {
     font-weight: bolder;
 }
 
-header :hover, footer a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
 section {
+    font-size: 3.5vw;
+    font-family: var(--font3);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -56,8 +68,9 @@ section.imagem {
 }
 
 section.imagem> p  {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.577);
-    width: 400px;
 }
 
 footer {
